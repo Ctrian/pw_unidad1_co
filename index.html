@@ -15,14 +15,137 @@
     la pestaña del navegador -->
 </head>
 
-<body> <!-- Body element "cuerpo" - Contains the visual content of the document (columnas filas botones, cajas de texto, etc) -->
-    <!--Emcabezados h y el número se refiere al tamaño donde el tamaño más grande es h1-->
-    <h1>Mi primera página web</h1>
-    <h3>Carrera de Computación</h3>
-    <h6>Cristian Olivares</h6>
-    <!-- Párrafo "parrafo" - Defines a paragraph of text -->
-    <p>Este es el primer párrafo de mi página web :p</p>
-    <button>ACEPTAR</button>
+<body>
+
+    <!-- Contenido transveral donde puede ir directamente el logo -->
+    <header>
+        <h1>Universidad Central del Ecuador</h1>
+        <h3>Carrera de Computación</h3>
+    </header>
+    <nav></nav>
+    <!-- contenido principal -->
+    <section>
+        <!-- Cabecera de secciones -->
+        <h1>Mi primera página web</h1>
+        <h6>Cristian Olivares</h6>
+
+        <!-- Párrafos (p) elementos grandes -->
+        <p>Este es el primer párrafo de mi página web :p</p>
+
+        <span>Párrafos cortos</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, possimus? Dolor deserunt omnis unde? Velit
+            dolores voluptatem labore facere quaerat.</p>
+
+        <!-- textos -->
+        <strong>Texto de importancia que quiero resaltar</strong>
+        <br>
+        <br>
+        <br>
+        <br>
+        <b>Textos que no quiero darle gran relevancia</b>
+        <em>Textos en cursiva, con importancia</em>
+        <i>Texto en cursiva pero sin importancia</i>
+        <u>Texto subrayado</u>
+
+        <!-- saltos de línea -->
+        <br>
+        <hr>
+        <br>
+        <s>Texto eliminado</s>
+        <mark>Texto resaltado</mark>
+
+        <!-- Listas -->
+        <ul>
+            <li>Ventas</li>
+            <li>Compras</li>
+            <li>Inventario</li>
+        </ul>
+
+        <ol>
+            <li>Ventas</li>
+            <li>Compras</li>
+            <li>Inventario</li>
+        </ol>
+
+        <!-- Tablas -->
+        <table border="1">
+            <!-- Declaración manual de la fila  -->
+            <thead><!-- declaración de filas tr siempre primero y representa una fila-->
+                <tr>
+                    <!-- Como contenido de la fila, ahí si vienen las columnas -->
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>CI</th>
+                    <th>Género</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Por cada fila es un elemento html TR -->
+                <tr>
+                    <td>1</td>
+                    <td>Cristian</td>
+                    <td>Olivares</td>
+                    <td>1712345678</td>
+                    <td>Masculino</td>
+                    <td><button>Editar</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>1712345678</td>
+                    <td>Masculino</td>
+                    <td><button>Editar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Contenedores - Elementos que agrupan contenido, agrupar
+        varios elementos HTML para manejarlo como un solo elemento -->
+        <div>
+            <!-- Son contenedores/agrupadores (header, nav, section, ...) -->
+        </div>
+
+        <!-- Formularios "sirven para ejecutar una acción, que acción se
+        va a ejecutar cuando de clic en algún botón del formulario" -->
+        <form action="">
+            <!-- Vinculamos el label con el id_..., si damos clic sobre
+            el nombre ps nosmanda directo a escribir y si no esta
+            vinculado ps no :v -->
+            <label for="id_nombre">Nombre</label>
+            <input type="text" name="" id="id_nombre">
+            <label for="id_password">Password</label>
+            <input type="password" id="id_password">
+            <label for="id_fecha">Fecha Nacimiento</label>
+            <input type="date" id="id_fecha">
+            <label for="id_edad">Edad</label>
+            <input type="number" id="id_edad">
+            <button>GUARDAR</button>
+        </form>
+
+        <!-- Multimedia -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png"
+            alt="No se puede visualizar" width="300" height="400">
+
+        <!-- <video src=""></video> "deprecado"-->
+
+        <!-- forma correcta -->
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+
+        <button>ACEPTAR</button>
+    </section>
+
+    <!-- contenido lateral -->
+    <aside></aside>
+    <footer>
+        <h3>Todos los Derechos Reservados</h3>
+    </footer>
+
 </body>
 
 </html>
