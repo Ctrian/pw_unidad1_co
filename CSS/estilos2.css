@@ -1,0 +1,66 @@
+/*1. Universal*/
+
+* {
+    color: blue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*2. Por tipo de elemento (debemos poner el nombre de los elementos HTML)*/
+
+h4 {
+    background: red;
+    font-size: 40px;
+}
+
+h5 {
+    background: green;
+    font-size: 10px;
+}
+
+/* 3. Por clase (la clase se refiere a un grupo)*/
+
+.grupo1 {
+    background: yellow;
+    border: solid black 3px;
+}
+
+/* 4. Por identificador (el id se refiere a un elemento único)*/
+
+#id_boton1 {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    /*border: solid red 5px;*/
+}   
+
+/* 5. Por atributo (se refiere a un elemento HTML) - Se puede combinar (button[id])*/
+
+[id] {
+    border: solid yellow 10px;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+img[alt="texto1"] {
+    width: 40px;
+    height: 50px;
+}
+
+img[src*=".png"] {
+    width: 40px;
+    height: 50px;
+}
+
+/* 6. Por pseudo-clases (se refiere a un estado / evento)*/
+
+i:hover {
+    color: darkblue;
+    font-size: 70px;
+}
+
+input:focus {
+    border-color: blueviolet;
+    background: red;
+}
