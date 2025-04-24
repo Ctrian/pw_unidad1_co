@@ -56,7 +56,7 @@ img[src*=".png"] {
 /* 6. Por pseudo-clases (se refiere a un estado / evento)*/
 
 i:hover {
-    color: darkblue;
+    background-color: #4c93b1;
     font-size: 70px;
 }
 
