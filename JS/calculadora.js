@@ -231,7 +231,7 @@ const fundamentos = () => {
     desestructuraccionObjetos(auto);
 
     console.log('COLORES');
-    desestructuraccionObjetos(auto.marca, auto.color); // Desestructurando el objeto
+    desestructuraccionObjetos2(auto, auto); // Desestructurando el objeto
 
     const universidad = {
         nombre: 'Universidad Central',
@@ -288,7 +288,7 @@ function desestructuraccionObjetos(objeto) {
     console.log(objeto);
 }
 
-function desestructuraccionObjetos2(marca, color) {
+function desestructuraccionObjetos2({marca, color}) {
     console.log(marca);
     console.log(color);
 }
